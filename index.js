@@ -11,20 +11,14 @@ module.exports = {
   plugins: [
     'react-hooks'
   ],
-  rules: {},
-  overrides: [
-    {
-      files: ['**/*.ts', '**/*.tsx'],
-      options: {
-        trailingComma: 'es5',
-        tabWidth: 2,
-        semi: false,
-        singleQuote: true,
-        arrowParens: 'always',
-        bracketSameLine: false,
-        bracketSpacing: true
-      },
-      rules: {},
-    }
-  ],
+  rules: {
+    'semi': ['error', 'never'],
+    'comma-dangle': ['error', 'never'],
+    'object-curly-spacing': ['error', 'always'],
+    'array-bracket-newline': ['error', 'never'],
+    'arrow-parens': ['error', 'always'],
+    'arrow-spacing': ['error', { 'before': true, 'after': true }],
+    'indent': ['error', 2],
+    'no-mixed-spaces-and-tabs': ['error', 'smart-tabs']
+  }
 };

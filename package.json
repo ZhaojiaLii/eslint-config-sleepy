@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-sleepy",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A shareable eslint config package, save time for lint configs.",
   "main": "index.js",
   "scripts": {
